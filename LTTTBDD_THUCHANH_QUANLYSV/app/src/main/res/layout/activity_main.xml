@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập tên sinh viên"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTen"
+        android:ems="10"
+        android:hint="Nhập lớp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLop"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnThem"
+        android:text="Sửa" />
+
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSua"
+        android:text="Xóa" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
